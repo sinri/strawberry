@@ -23,7 +23,9 @@ if ($argc < 4) {
 
     $strawberry = new \sinri\strawberry\Strawberry($configFile, $warnTime, $storeDir);
 
+echo date('Y-m-d H:i:s') . " Strawberry Starts." . PHP_EOL;
     $strawberry->checkFullProcessList();
+echo date('Y-m-d H:i:s') . " Strawberry Ends." . PHP_EOL;
 
 //} catch (Exception $e) {
 //    exit("Exception: " . $e->getMessage() . PHP_EOL);

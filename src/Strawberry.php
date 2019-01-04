@@ -91,7 +91,8 @@ class Strawberry
                 $target_file = $target_dir . '/' . $hash . '.sql';
 
                 $content = "-- " . date('Y-m-d H:i:s') . " Recorded From: " . $item['Host'] . ' Schema: ' . $item['db'] . " User: " . $item['User'] . PHP_EOL . '-- Least Time: ' . $item['Time'] . PHP_EOL . $sql . PHP_EOL;
-                file_put_contents($target_file, $content);
+                $bytes = file_put_contents($target_file, $content);
+                echo date('Y-m-d H:i:s') . " Wrote " . json_encode($bytes) . " to " . $target_file . PHP_EOL;
             }
         }
     }

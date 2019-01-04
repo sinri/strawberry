@@ -16,7 +16,7 @@ if (php_sapi_name() != 'cli') {
 if ($argc < 4) {
     exit("Usage: php Strawberry.php [ConfigFile] [StoreDir] [Time]" . PHP_EOL);
 }
-try {
+//try {
     $configFile = $argv[1];
     $storeDir = $argv[2];
     $warnTime = $argv[3];
@@ -25,6 +25,6 @@ try {
 
     $strawberry->checkFullProcessList();
 
-} catch (Exception $e) {
-    exit("Exception: " . $e->getMessage() . PHP_EOL);
-}
+//} catch (Exception $e) {
+//    exit("Exception: " . $e->getMessage() . PHP_EOL);
+//}

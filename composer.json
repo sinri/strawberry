@@ -1,0 +1,29 @@
+{
+  "name": "sinri/strawberry",
+  "description": "MySQL Process List Spy",
+  "type": "project",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Sinri Edogawa",
+      "email": "e.joshua.s.e@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "sinri/ark": "^2.0",
+    "sinri/ark-curl": "^1.3",
+    "sinri/ark-pdo": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "sinri\\strawberry\\": "src/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.laravel-china.org"
+    }
+  }
+}
